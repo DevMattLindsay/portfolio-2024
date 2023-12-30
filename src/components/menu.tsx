@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaFileArrowDown, FaLinkedin } from "react-icons/fa6";
+import resume from "../assets/documents/matthewlindsay.pdf";
 
 const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,11 +38,7 @@ const Menu: React.FC = () => {
         </nav>
 
         <div className="sidebar-bottom">
-          <a
-            download
-            href="/documents/matthewlindsay.pdf"
-            className="btn btn-iconed sidebar-resume"
-          >
+          <a download href={resume} className="btn btn-iconed sidebar-resume">
             <div className="btn-iconed-text">Resume</div>
             <div className="btn-iconed-icon">
               <FaFileArrowDown />

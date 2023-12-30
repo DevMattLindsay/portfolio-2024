@@ -8,6 +8,7 @@ import Work from "../components/work";
 import Contact from "../components/contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/index.scss";
+import favicon from "../assets/images/favicon.ico";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -26,4 +27,9 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => (
+  <>
+    <title>Matthew Lindsay</title>
+    <link rel="shortcut icon" type="image/x-icon" href={favicon} />
+  </>
+);

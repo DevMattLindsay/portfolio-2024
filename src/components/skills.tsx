@@ -8,7 +8,7 @@ const Skills: React.FC = () => {
         <ScrollInView className="col-lg-5 -anim-fade-right">
           <h2 className="section-header">Skills</h2>
           <p>
-            Since beginning my career as a Front End developer 5 years ago, I’ve
+            Since beginning my career as a Front End developer 7 years ago, I’ve
             picked up a number of skills building websites that are fast and
             easy to use.
           </p>
@@ -19,9 +19,7 @@ const Skills: React.FC = () => {
           </p>
           <p>
             I also have picked up some back end knowledge. My professional
-            experience I have used PHP with code igniter but I wish to branch
-            out and learn newer back end technologies, namely NodeJS which I
-            started learning.
+            experience I have used PHP with code igniter and Node with NestJS
           </p>
         </ScrollInView>
         <div className="col-lg-7">
@@ -31,10 +29,10 @@ const Skills: React.FC = () => {
                 <span>Front End</span>
               </div>
               <div className="-label">
-                <span>Back End</span>
+                <span>React</span>
               </div>
               <div className="-label">
-                <span>React</span>
+                <span>Back End</span>
               </div>
             </div>
             <div className="skills-graph-bars">
@@ -44,8 +42,8 @@ const Skills: React.FC = () => {
                 <span>Mastered</span>
               </div>
               <ScrollInView className="-bar -frontend"></ScrollInView>
-              <ScrollInView className="-bar -backend"></ScrollInView>
               <ScrollInView className="-bar -react"></ScrollInView>
+              <ScrollInView className="-bar -backend"></ScrollInView>
             </div>
           </div>
         </div>

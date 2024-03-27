@@ -38,23 +38,23 @@
 
         &.animate {
           &.-frontend {
-            width: 80%;
+            width: 90%;
+          }
+          &.-react {
+            width: 75%;
           }
           &.-backend {
             width: 60%;
-          }
-          &.-react {
-            width: 40%;
           }
         }
 
         &.-frontend {
           background-color: $color_teal;
         }
-        &.-backend {
+        &.-react {
           background-color: $color_magenta;
         }
-        &.-react {
+        &.-backend {
           background-color: $color_blue;
         }
       }

@@ -2,18 +2,85 @@ import * as React from "react";
 import ScrollInView from "./scrollInView";
 import gamImg from "../assets/images/work-gam.png";
 import walmartImg from "../assets/images/work-walmart.png";
-import kulapixImg from "../assets/images/work-kulapix.png";
+import pivotcaImg from "../assets/images/work-pivotca.png";
+import pivotioImg from "../assets/images/work-pivotio.png";
+import ExperienceItem from "./experienceItem";
 
 const Work: React.FC = () => {
   return (
     <section id="work" className="section-work section-full">
-      <ScrollInView className="container row work-row -anim-fade-up">
-        <h2 className="section-header">Work</h2>
-        <div className="col-lg-8 work-experience">
-          <h3 className="experience-title">GAM Creative Marketing</h3>
-          <p className="experience-subtitle">
-            Front End Developer, 2016 -&gt; 2021
+      <div>
+        <ScrollInView className="container -anim-fade-up">
+          <h2 className="section-header">Work</h2>
+        </ScrollInView>
+
+        <ExperienceItem
+          title="pivotnow"
+          subtitle="Front End Developer, 2022 -&gt; current"
+          imgUrl={pivotcaImg}
+          href="https://pivotnow.ca/"
+        >
+          <p className="experience-description">
+            Developed web applications for a multitude of clients including
+            Wal-Mart Canada. Worked in a small team with diverse skill sets to
+            develop web apps.
           </p>
+          <p className="experience-description">Responsibilities included :</p>
+          <ul>
+            <li>
+              Worked with Designer to create "Design to Development" workflow.
+              Used technologies such as Figma, Storybook and Jira, as well as
+              their integration API's to streamline the process.
+            </li>
+            <li>
+              Set up headless CMS for documentation writers to write and publish
+              content for the company website. Used Strapi for the CMS and
+              Gatsby for the static website. Used GraphQL to query CMS data and
+              implemented a webhook to trigger a build when content is
+              published.
+            </li>
+          </ul>
+          <p className="experience-description"></p>
+        </ExperienceItem>
+
+        <ExperienceItem
+          isProject={true}
+          title="pivotnow"
+          imgUrl={pivotioImg}
+          href="https://pivotnow.io/"
+        >
+          <p className="experience-description">
+            pivotnow is a web app that monitors devices and their status.
+            Messaging a technician when an alert is triggered
+          </p>
+          <ul>
+            <li>
+              Built a component library that used tailwind, headlessUI and
+              storybook. Worked with QA, designers and developers to make
+              reusable components that matched design and were accessible and
+              reusable.
+            </li>
+            <li>
+              Built an Editable table component that used AWS Appsync to fetch
+              live data, in so that multiple users can work on the same table
+              and view changes live. Used Optimistic UI methodology for instant
+              feedback for the user. Implemented virtualization to handle large
+              datasets (1000+ records) in the table without significant
+              performance loss.
+            </li>
+            <li>
+              Managed state with Redux Saga, and later migrated to Redux Toolkit
+              and RTK Query.
+            </li>
+          </ul>
+        </ExperienceItem>
+
+        <ExperienceItem
+          title="GAM Creative Marketing"
+          subtitle="Front End Developer, 2016 -&gt; 2021"
+          imgUrl={gamImg}
+          href="https://gamcreative.com/"
+        >
           <p className="experience-description">
             Developed web applications for a multitude of clients including
             Wal-Mart Canada. Worked in a small team with diverse skill sets to
@@ -31,29 +98,16 @@ const Work: React.FC = () => {
             <li>Assured AODA compliancy across projects</li>
           </ul>
           <p className="experience-description">
-            Built company website created in a short time frame working closely
-            to a designer to showcase our projects.
+            Built company portfolio website
           </p>
-        </div>
-        <a
-          href="https://gamcreative.com/"
-          className="col-lg-4 work-block"
-          target="_blank"
-        >
-          <img
-            className="work-block-image"
-            src={gamImg}
-            alt="GAM Creative Company Website"
-          />
-          <div className="work-block-overlay">
-            <span>visit</span>
-          </div>
-        </a>
-      </ScrollInView>
+        </ExperienceItem>
 
-      <ScrollInView className="container row work-row work-project -anim-fade-up">
-        <div className="col-lg-8 work-experience">
-          <h4 className="experience-title-project">Walmart Photo Centre</h4>
+        <ExperienceItem
+          isProject={true}
+          title="Walmart Photo Centre"
+          imgUrl={walmartImg}
+          href="https://www.walmartphotocentre.ca/"
+        >
           <p className="experience-description">
             A large scope web application that allows users to upload, edit,
             preview and order photo products. Worked on this project for 5 years
@@ -76,48 +130,8 @@ const Work: React.FC = () => {
             Learned how to write code that is accessible and secure for
             compliancy with AODA and PCI.
           </p>
-        </div>
-        <a
-          href="https://www.walmartphotocentre.ca/"
-          className="col-lg-4 work-block"
-          target="_blank"
-        >
-          <img
-            className="work-block-image"
-            src={walmartImg}
-            alt="GAM Creative Company Website"
-          />
-          <div className="work-block-overlay">
-            <span>visit</span>
-          </div>
-        </a>
-      </ScrollInView>
-
-      <ScrollInView className="container row work-row work-project -anim-fade-up">
-        <div className="col-lg-8 work-experience">
-          <h4 className="experience-title-project">Kulapix</h4>
-          <p className="experience-description">
-            Photo Product website similar to Walmart Photo Centre but made for
-            the US Market. Both websites share a backend however the front end
-            was overhauled. Learned to create modular code to avoid repetition
-            between projects.
-          </p>
-        </div>
-        <a
-          href="https://kulapix.com/"
-          className="col-lg-4 work-block"
-          target="_blank"
-        >
-          <img
-            className="work-block-image"
-            src={kulapixImg}
-            alt="GAM Creative Company Website"
-          />
-          <div className="work-block-overlay">
-            <span>visit</span>
-          </div>
-        </a>
-      </ScrollInView>
+        </ExperienceItem>
+      </div>
     </section>
   );
 };

@@ -9,6 +9,7 @@ import Contact from "../components/contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/index.scss";
 import favicon from "../assets/images/favicon.ico";
+import Projects from "../components/projects";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -19,6 +20,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <main>
         <Skills />
         <Work />
+        <Projects />
         <Contact />
       </main>
     </>

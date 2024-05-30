@@ -32,6 +32,9 @@ const Menu: React.FC = () => {
           <a href="#work" className="sidebar-nav-link js-scroll-link">
             Work
           </a>
+          <a href="#projects" className="sidebar-nav-link js-scroll-link">
+            Projects
+          </a>
           <a href="#contact" className="sidebar-nav-link js-scroll-link">
             Contact
           </a>

@@ -8,14 +8,14 @@ const Skills: React.FC = () => {
         <ScrollInView className="col-lg-5 -anim-fade-right">
           <h2 className="section-header">Skills</h2>
           <p>
-            Since beginning my career as a Front End developer 7 years ago, I’ve
-            picked up a number of skills building websites that are fast and
-            easy to use.
+            Building web applications is my passion. I love keeping up to date
+            with the newest technologies and best practices. I'm always looking
+            for ways to improve my skills and learn new things.
           </p>
           <p>
-            My main area of expertise is using HTML, CSS and JS to create
-            interactive layouts for medium and large web apps. I build websites
-            with scalability, accessibility and security in mind.
+            My main area of expertise is using React to create interactive
+            layouts for medium and large web apps. I build websites with
+            scalability, accessibility and security in mind.
           </p>
           <p>
             I also have picked up some back end knowledge. My professional

@@ -75,6 +75,21 @@ body {
         }
       }
     }
+    &.-iconed-teal {
+      background-color: darken($color_teal, 5%);
+
+      .btn-iconed-icon {
+        background-color: darken($color_teal, 12%);
+      }
+
+      &:hover {
+        background-color: darken($color_teal, 9%);
+
+        .btn-iconed-icon {
+          background-color: darken($color_teal, 14%);
+        }
+      }
+    }
   }
 }
 

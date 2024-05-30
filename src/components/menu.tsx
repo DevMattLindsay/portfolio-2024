@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaFileArrowDown, FaLinkedin } from "react-icons/fa6";
+import { FaFileArrowDown, FaLinkedin, FaGithub } from "react-icons/fa6";
 import resume from "../assets/documents/matthewlindsay.pdf";
 
 const Menu: React.FC = () => {
@@ -55,6 +55,16 @@ const Menu: React.FC = () => {
             <div className="btn-iconed-text">Connect</div>
             <div className="btn-iconed-icon">
               <FaLinkedin />
+            </div>
+          </a>
+          <a
+            href="https://github.com/DevMattLindsay"
+            className="btn btn-iconed -iconed-teal sidebar-github"
+            target="_blank"
+          >
+            <div className="btn-iconed-text">Github</div>
+            <div className="btn-iconed-icon">
+              <FaGithub />
             </div>
           </a>
         </div>
